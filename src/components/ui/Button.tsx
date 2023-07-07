@@ -30,6 +30,12 @@ export interface ButtonProps
   isLoading?: boolean;
 }
 
+/**
+ * * Button component for reuseable
+ * @param props
+ * @returns Button
+ */
+
 const Button: FC<ButtonProps> = ({
   className,
   children,
