@@ -1,6 +1,6 @@
 import axios, { AxiosError, AxiosResponse } from "axios";
-import isEmpty from "lodash";
 import { toast } from "react-hot-toast";
+import isEmpty from "lodash";
 
 /**
  * * Define axios config when request and response
@@ -28,7 +28,7 @@ axiosClient.interceptors.request.use(function (config) {
 
 /**
  * response
- * * Define return data and show error notification based on status http
+ * * Define return data and show error notification based on http status
  * TODO: Using if to check status and toast to show notification type and message error
  */
 axiosClient.interceptors.response.use(
